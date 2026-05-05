@@ -63,14 +63,14 @@ packetis processed at the **IP Layer**:
 >   **input** (for example response to an ssh login attempt to the router).
 >   This includes ipv4 and ipv6 filtering rules, defined in:
 >
->   - `set firewall ipv4 output filter ...`.
->   - `set firewall ipv6 output filter ...`.
+>   - `set firewall ipv4 output raw ...`.
+>   - `set firewall ipv6 output raw ...`.
 >
 > - **Postrouting**: as in **Prerouting**, several actions defined in
 >   different parts of VyOS configuration are performed in this
 >   stage. This includes:
 >
->   - **Source NAT**: rules defined under `set [nat | nat66] destination...`.
+>   - **Source NAT**: rules defined under `set [nat | nat66] source...`.
 
 If the interface where the packet was received is part of a bridge, then
 the packet is processed at the **Bridge Layer**, which contains a basic setup for

@@ -705,7 +705,7 @@ addresses.
 ``` none
 set firewall ipv4 name FOO rule 50 source address 192.0.2.10-192.0.2.11
 # with a '!' the rule match everything except the specified subnet
-set firewall ipv4 input filter FOO rule 51 source address !203.0.113.0/24
+set firewall ipv4 name FOO rule 51 source address !203.0.113.0/24
 ```
 
 </div>
@@ -2201,65 +2201,6 @@ ttl \<eq | gt | lt\> \<0-255\>
 
 Match time to live parameter, where 'eq' stands for 'equal'; 'gt' stands for
 'greater than', and 'lt' stands for 'less than'.
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 forward filter rule \<1-999999\>
-recent count \<1-255\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 input filter rule \<1-999999\>
-recent count \<1-255\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 output filter rule \<1-999999\>
-recent count \<1-255\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 name \<name\> rule \<1-999999\>
-recent count \<1-255\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 forward filter rule \<1-999999\>
-recent time \<second | minute | hour\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 input filter rule \<1-999999\>
-recent time \<second | minute | hour\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 output filter rule \<1-999999\>
-recent time \<second | minute | hour\>
-
-</div>
-
-<div class="cfgcmd">
-
-set firewall ipv4 name \<name\> rule \<1-999999\>
-recent time \<second | minute | hour\>
-
-Match when 'count' amount of connections are seen within 'time'. These
-matching criteria can be used to block brute-force attempts.
 
 </div>
 
