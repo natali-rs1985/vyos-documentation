@@ -1698,49 +1698,6 @@ If an interface is attached to a non-default vrf, when using
    'greater than', and 'lt' means 'less than'.
 ```
 
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 forward filter rule <1-999999>
-   recent count <1-255>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 input filter rule <1-999999>
-   recent count <1-255>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 output filter rule <1-999999>
-   recent count <1-255>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 name <name> rule <1-999999>
-   recent count <1-255>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 forward filter rule <1-999999>
-   recent time <second | minute | hour>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 input filter rule <1-999999>
-   recent time <second | minute | hour>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 output filter rule <1-999999>
-   recent time <second | minute | hour>
-```
-
-```{eval-rst}
-.. cfgcmd:: set firewall ipv4 name <name> rule <1-999999>
-   recent time <second | minute | hour>
-
-   Match when 'count' amount of connections appear within 'time'. Use these
-   matching criteria to block brute-force attempts.
-```
-
 ### Packet Modifications
 
 Starting from **VyOS-1.5-rolling-202410060007**, the firewall can modify

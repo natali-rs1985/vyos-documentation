@@ -138,7 +138,7 @@ As well as the values passed to the query string are validated to ensure they
 are strictly Boolean and won't accept any other data type:
 
 ```none
-curl --location --request GET 'https://vyos/info?hostname=1; eval"sudo rm -rf /"
+curl --location --request GET 'https://vyos/info?hostname=1; eval"sudo rm -rf /"'
 
 response
 {

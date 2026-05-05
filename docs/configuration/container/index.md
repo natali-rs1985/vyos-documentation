@@ -5,7 +5,7 @@ lastproofread: '2024-07-03'
 # Container
 
 The VyOS container implementation is based on [Podman](https://podman.io/) as
-a deamonless container engine.
+a daemonless container engine.
 
 ## Configuration
 
@@ -270,17 +270,17 @@ Default health check is run for the container if defined by the image.
 Override the default health check command from the image for a container.
 ```
 
-```{cfgcmd} set container name \<name\> health check interval \<interval\>
+```{cfgcmd} set container name \<name\> health-check interval \<interval\>
 
 Override the default health-check interval. For example: `60`
 ```
 
-```{cfgcmd} set container name \<name\> health check timeout \<timeout\>
+```{cfgcmd} set container name \<name\> health-check timeout \<timeout\>
 
 Override the default health-check timeout. For example: `10`
 ```
 
-```{cfgcmd} set container name \<name\> health check retries \<retries\>
+```{cfgcmd} set container name \<name\> health-check retries \<retries\>
 
 Number of health check retries before container is considered unhealthy. For example: `1`
 ```
