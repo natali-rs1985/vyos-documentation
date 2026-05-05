@@ -150,5 +150,4 @@ $./vyos-napalm.py
 [edit]
 ```
 
-[napalm]: https://napalm.readthedocs.io/en/latest/base.html
 [NAPALM VyOS driver]: https://github.com/napalm-automation-community/napalm-vyos

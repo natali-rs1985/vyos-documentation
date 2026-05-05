@@ -400,7 +400,7 @@ variable "admin_username" {
 
 variable "admin_password" {
   description = "Administrator password"
-  default     = "Vyos0!"
+  sensitive   = true
 }
 
 variable "source_network" {
@@ -488,7 +488,7 @@ ansible_network_os: vyos.vyos.vyos
 
 # user and password gets from terraform variables "admin_username" and "admin_password" in the file /root/azvyos/var.tf
 ansible_user: vyos
-ansible_ssh_pass: Vyos0!
+ansible_ssh_pass: "{{ vault_vyos_password }}"
 ```
 
 
