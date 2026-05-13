@@ -38,7 +38,7 @@ pull_request_rules:
   # — `Flag T-ID format violation in PR title or commit messages` — or the
   # parent rule keeps firing and `invalid-title` labels every PR. (The
   # earlier two-rule override shipped in 3d44fe06 used the wrong names
-  # and was a no-op; PR #2014 surfaced the regression.)
+  # and was a no-op; vyos/vyos-documentation#2014 surfaced the regression.)
   #
   # Conditions are constructed to never match (a PR cannot simultaneously
   # be closed and not closed), so the `toggle` action always falls into
